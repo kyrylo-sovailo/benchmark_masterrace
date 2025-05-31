@@ -83,8 +83,8 @@ def filter_plausible_configurations(configurations):
         cpp_vector_required = vector_structure in [ "VEC_CPP" ]
         if cpp_vector_required != (allocator in [ "ALC_ALLOCATOR" ]): continue
 
-        uint_not_same_as_sizet = platform.architecture()[0] == '64bit'
-        if uint_not_same_as_sizet and vector_structure in [ "VEC_UINT", "VEC_UINT_OFFSET" ]: continue
+        uint_same_as_sizet = platform.architecture()[0] != '64bit'
+        if uint_same_as_sizet and vector_structure in [ "VEC_UINT", "VEC_UINT_OFFSET" ]: continue
 
         libc_required = (vector_structure in [ "VEC_CPP" ] or
             not allocator in [ "ALC_MMAP", "ALC_STATIC" ] or
@@ -283,7 +283,7 @@ class Masterrace:
             stderr = result.stderr.decode()
             print(stdout)
             print(stderr)
-            if stdout.count("->") != 4 * RUNS_NUMBER: raise Exception(f"Not exactly {RUNS_NUMBER} results")
+            if stdout.count("->") != 20 * RUNS_NUMBER: raise Exception(f"Not exactly {RUNS_NUMBER} results")
             result = { "real":[], "user":[], "sys":[], "parse":[], "solve":[] }
             for line in stderr.splitlines():
                 for key in result:
