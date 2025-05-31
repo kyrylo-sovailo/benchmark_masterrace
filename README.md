@@ -41,7 +41,7 @@ The strategy is to write a macros-heavy piece of code and to measure the perform
       - `malloc` (ALC_MALLOC_NO_FREE)
       - Custom `mmap`-based allocation (ALC_MMAP)
       - Static allocation (ALC_STATIC)
-      - Multithreading:
+ - Multithreading:
       - `std::thread` (MLT_NO)
       - `std::thread` (MLT_CPP)
       - `C11 thread` (MLT_C)
