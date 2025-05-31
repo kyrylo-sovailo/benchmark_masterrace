@@ -1,0 +1,32 @@
+Total configurations    : 56
+Plausible configurations: 29
+    CMP  OPT        VEC                  ALC             MLT IO        LC   PK  
+1   GPP  DEFAULT    POINTER              MALLOC_NO_FREE  NO  CPP_LINE  YES  NO  0.6832 + 0.1363 = 0.8248
+2   GPP  DEFAULT    POINTER              NEW_NO_DELETE   NO  CPP_LINE  YES  NO  0.6920 + 0.1302 = 0.8275
+3   GPP  RTTI       POINTER              REALLOC         NO  CPP_LINE  YES  NO  0.6931 + 0.1465 = 0.8427
+4   GPP  DEFAULT    SIZE_T               REALLOC         NO  CPP_LINE  YES  NO  0.7018 + 0.1427 = 0.8473
+5   GPP  BASE       POINTER              REALLOC         NO  CPP_LINE  YES  NO  0.6999 + 0.1468 = 0.8498
+6   GPP  DEFAULT    POINTER              MALLOC          NO  CPP_LINE  YES  NO  0.7020 + 0.1463 = 0.8520
+7   GPP  DEFAULT    POINTER              REALLOC         NO  CPP_LINE  YES  NO  0.7046 + 0.1460 = 0.8537 (standard)
+8   GPP  DEFAULT    POINTER              NEW             NO  CPP_LINE  YES  NO  0.7021 + 0.1483 = 0.8540
+9   GPP  NATIVE     POINTER              REALLOC         NO  CPP_LINE  YES  NO  0.7074 + 0.1450 = 0.8556
+10  GPP  LTO        POINTER              REALLOC         NO  CPP_LINE  YES  NO  0.7127 + 0.1450 = 0.8608
+11  GPP  LTO        CPP                  ALLOCATOR       NO  CPP_LINE  YES  NO  0.6963 + 0.1620 = 0.8617
+12  GPP  RTTI       CPP                  ALLOCATOR       NO  CPP_LINE  YES  NO  0.6996 + 0.1631 = 0.8660
+13  GPP  BASE       CPP                  ALLOCATOR       NO  CPP_LINE  YES  NO  0.7065 + 0.1624 = 0.8723
+14  GPP  DEFAULT    CPP                  ALLOCATOR       NO  CPP_LINE  YES  NO  0.7100 + 0.1621 = 0.8755 (standard)
+15  GPP  NATIVE     CPP                  ALLOCATOR       NO  CPP_LINE  YES  NO  0.7109 + 0.1634 = 0.8777
+16  GPP  DEFAULT    POINTER_NO_CAPACITY  REALLOC         NO  CPP_LINE  YES  NO  0.7411 + 0.1678 = 0.9122
+17  GPP  DEFAULT    SIZE_T_NO_CAPACITY   REALLOC         NO  CPP_LINE  YES  NO  0.7430 + 0.1666 = 0.9129
+18  GPP  DEFAULT32  CPP                  ALLOCATOR       NO  CPP_LINE  YES  NO  0.8457 + 0.1832 = 1.0325
+19  GPP  DEFAULT32  POINTER              REALLOC         NO  CPP_LINE  YES  NO  0.8646 + 0.1648 = 1.0325
+20  GPP  RTTI32     POINTER              REALLOC         NO  CPP_LINE  YES  NO  0.8672 + 0.1648 = 1.0352
+21  GPP  NATIVE32   CPP                  ALLOCATOR       NO  CPP_LINE  YES  NO  0.8505 + 0.1829 = 1.0370
+22  GPP  LTO32      CPP                  ALLOCATOR       NO  CPP_LINE  YES  NO  0.8447 + 0.1903 = 1.0385
+23  GPP  BASE32     POINTER              REALLOC         NO  CPP_LINE  YES  NO  0.8718 + 0.1649 = 1.0399
+24  GPP  DEFAULT    POINTER              REALLOC         NO  C_LINE    YES  NO  0.8900 + 0.1486 = 1.0413
+25  GPP  BASE32     CPP                  ALLOCATOR       NO  CPP_LINE  YES  NO  0.8538 + 0.1860 = 1.0433
+26  GPP  RTTI32     CPP                  ALLOCATOR       NO  CPP_LINE  YES  NO  0.8554 + 0.1856 = 1.0446
+27  GPP  NATIVE32   POINTER              REALLOC         NO  CPP_LINE  YES  NO  0.8759 + 0.1662 = 1.0453
+28  GPP  LTO32      POINTER              REALLOC         NO  CPP_LINE  YES  NO  0.8807 + 0.1685 = 1.0524
+29  GPP  DEFAULT    CPP                  ALLOCATOR       NO  C_LINE    YES  NO  0.8885 + 0.1632 = 1.0551
